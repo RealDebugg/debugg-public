@@ -18,4 +18,5 @@ function createJobPed(coords, pedType, task, data)
             TaskStartScenarioInPlace(newPed, task, 0, 0)
         end
     end
+    return
 end
