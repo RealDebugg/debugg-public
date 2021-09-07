@@ -1,0 +1,114 @@
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="radio.css" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+	<audio id="Ch_FireOps" src="sounds/channels/Ch_FireOps.wav"></audio>
+	<audio id="Ch_SWDispatch" src="sounds/channels/Ch_SWDispatch.wav"></audio>
+	<audio id="Ch_Tac1" src="sounds/channels/Ch_Tac1.wav"></audio>
+	<audio id="Ch_Tac2" src="sounds/channels/Ch_Tac2.wav"></audio>
+    <audio id="deny" src="sounds/general/MotorolaTalkPermitDeny.wav"></audio>
+    <audio id="query" src="sounds/general/MotorolaTalkQueryTone.wav"></audio>
+    <audio id="channel_held" src="sounds/tones/channel_held.wav"></audio>
+    <audio id="ten_three" src="sounds/tones/ten_three.wav"></audio>
+    <div id="connectionText">
+        [Radio] <span id="errorText">Not Connected</span>
+    </div>
+    <div id="connectionBox">
+        <div id="connectionInner">
+            <h1>DRP Radio</h1>
+            <p>
+                <span class="scriptName">DRP Radio</span> is our Motorola Radio
+                emulator, using a custom made Mumble plugin.
+            </p>
+            <p>
+                It gives us a lot more <span class="green">possibilities</span>,
+                which currently allow such things as:
+            </p>
+            <ul>
+                <li>Digitial Trunked Radio System</li>
+                <li>Radio clicks</li>
+                <li>Talk enforcement</li>
+                <li>Emergency buttons</li>
+                <li>911 calls</li>
+            </ul>
+            <p>
+                <span class="scriptName">DRP Radio</span> must be
+                <span class="blue">installed</span> and
+                <span class="blue">running</span> to play on our servers.
+            </p>
+            <p>
+                If you are encountering any issues, please see Tech Support so a
+                support represenative can assist you.
+            </p>
+            <br />
+            <p>
+                Plugin status:
+                <span id="pluginStatus" class="scriptName">Not Connected</span>
+            </p>
+        </div>
+    </div>
+    <!-- <div class="nolink" id="radio"> -->
+    <div id="radio">
+        <img
+            id="img"
+            src="images/radio_final.png"
+            width="225px"
+            height="550px"
+        />
+        <div id="panicBtn"></div>
+        <div id="chUpBtn"></div>
+        <div id="chDownBtn"></div>
+        <div id="pwrBtn"></div>
+        <div id="nolink" style="display: none;">ALL LOCK</div>
+        <div id="radioDisplay" style="display: none;">
+            <div id="statusText">
+                <div id="time">22:22z</div>
+                <div id="talkAround">|&rarr;|</div>
+                <img
+                    src="images/battery.png"
+                    width="20px"
+                    height="15px"
+                    id="battery"
+                />
+                <div class="statusBar batteryBar" id="batteryBar1"></div>
+                <div class="statusBar batteryBar" id="batteryBar2"></div>
+                <div class="statusBar batteryBar" id="batteryBar3"></div>
+                <div id="scanning">Z</div>
+                <img
+                    id="tower"
+                    src="images/tower.png"
+                    width="10px"
+                    height="15px"
+                />
+                <div class="statusBar" id="towerBar1"></div>
+                <div class="statusBar" id="towerBar2"></div>
+                <div class="statusBar" id="towerBar3"></div>
+            </div>
+
+            <div id="topText"></div>
+
+            <div id="chText"></div>
+
+            <div id="rangeText">Out of range</div>
+
+            <div id="btmText">
+                <div id="btm1Text" class="btmText"></div>
+                <div id="btm2Text" class="btmText"></div>
+                <div id="btm3Text" class="btmText"></div>
+            </div>
+        </div>
+
+        <div class="softBtn" id="softBtn1"></div>
+        <div class="softBtn" id="softBtn2"></div>
+        <div class="softBtn" id="softBtn3"></div>
+
+        <div class="softBtn" id="softBtn4"></div>
+        <div class="softBtn" id="softBtn5"></div>
+        <div class="softBtn" id="softBtn6"></div>
+    </div>
+    <script src="helper.js"></script>
+    <script src="radio.js"></script>
+</body>
