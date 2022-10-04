@@ -9,7 +9,7 @@ function IsInsideInterior() {
 
 async function CheckForProfanity(string) {
     let [retval, token] = ScProfanityCheckUgcString(string);
-    while ScProfanityGetCheckIsPending(token) {
+    while (ScProfanityGetCheckIsPending(token)) {
         await Wait(0);
     }
     return ScProfanityGetStringPassed(token);
