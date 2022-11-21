@@ -1,0 +1,6 @@
+{
+    "version": "1.0",
+    "configVersion": "1.0",
+    "minCoreVersion": "2.5.7",
+    "pluginDepends": [{ "name": "debuggCalls", "version": "1.0", "critical": true }]
+}
